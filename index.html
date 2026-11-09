@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff6f1" />
+  <title>Petal Pop — Style Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Petal Pop home"><span class="brand-mark">✿</span><span>petal<span class="brand-pop">pop</span><small>STYLE STUDIO</small></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-view="studio">✦ <span>Studio</span></button>
+        <button class="nav-link" data-view="closet">▤ <span>Closet</span></button>
+        <button class="nav-link" data-view="shop">♡ <span>Shop</span></button>
+        <button class="nav-link" data-view="inspiration">☼ <span>Inspo</span></button>
+      </nav>
+      <div class="wallet"><span class="coin-icon">✦</span><span id="coin-count">1,250</span><button class="plus-btn" id="earn-coins" aria-label="Earn coins">+</button></div>
+      <button class="mobile-menu" id="mobile-menu" aria-label="Open menu">☰</button>
+    </header>
+
+    <main>
+      <section class="welcome-row">
+        <div><p class="eyebrow"><span id="today-date">MONDAY, MAY 20</span> <span>·</span> YOUR HAPPY PLACE</p><h1>Make a little <em>magic.</em></h1><p class="subhead">Mix, match, and make today feel like you.</p></div>
+        <button class="daily-pill" id="daily-gift"><span class="gift-icon">🎁</span><span><b>Daily sparkle</b><small>Claim your daily gift</small></span><span class="pill-arrow">›</span></button>
+      </section>
+
+      <section class="workspace" id="view-studio">
+        <div class="avatar-panel">
+          <div class="panel-topline"><span class="live-dot"></span> YOUR STYLE STUDIO <span class="room-label">ROOM 01</span></div>
+          <div class="avatar-stage" id="avatar-stage">
+            <div class="stage-sun"></div><span class="sparkle sp-one">✦</span><span class="sparkle sp-two">✧</span><span class="sparkle sp-three">✦</span>
+            <div class="scene-tag"><span>✿</span> PETAL GARDEN</div>
+            <svg id="avatar" viewBox="0 0 320 470" role="img" aria-label="Your fashion avatar">
+              <ellipse cx="160" cy="443" rx="87" ry="14" fill="#d5b9c9" opacity=".35"/>
+              <g id="avatar-art">
+                <g id="hair-back"><path d="M91 141 Q73 73 121 51 Q181 21 222 68 Q255 108 229 204 L222 292 Q199 321 183 270 L105 292 Q85 268 93 214Z" fill="#694438"/></g>
+                <g id="legs"><path d="M124 313 L117 409 Q117 423 132 423 Q146 423 149 409 L161 327Z" fill="#f2c6af"/><path d="M166 323 L174 409 Q176 423 190 422 Q204 421 202 407 L198 311Z" fill="#f2c6af"/></g>
+                <g id="shoes"><path d="M114 405 Q128 398 148 407 L156 424 Q157 435 145 437 L111 433 Q101 429 107 418Z" fill="#f28d9b"/><path d="M175 407 Q189 399 204 405 L216 421 Q220 432 208 435 L177 434 Q167 431 170 420Z" fill="#f28d9b"/><path d="M110 423 Q130 429 153 425 M174 424 Q195 430 214 424" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></g>
+                <g id="body"><path d="M117 197 Q132 184 160 185 Q188 184 204 200 L219 291 Q193 313 160 313 Q126 313 102 291Z" fill="#f8d7e3"/><path d="M119 202 Q99 207 89 236 L77 276 Q74 288 86 292 Q98 296 104 284 L126 247Z" fill="#f2c6af"/><path d="M201 202 Q221 211 231 239 L243 276 Q247 289 235 293 Q223 297 218 283 L194 248Z" fill="#f2c6af"/><path d="M116 205 Q160 222 204 205 L208 229 Q159 247 112 228Z" fill="#edabc2"/><path d="M138 230 L160 247 L183 230" fill="none" stroke="#fff8f8" stroke-width="4" stroke-linecap="round"/></g>
+                <g id="bottom-overlay" class="item-layer"></g>
+                <g id="face"><ellipse cx="160" cy="129" rx="57" ry="68" fill="#f2c6af"/><path d="M131 144 Q140 153 149 144 M171 144 Q180 153 189 144" fill="none" stroke="#754b51" stroke-width="4" stroke-linecap="round"/><path d="M153 165 Q160 170 167 165" fill="none" stroke="#dc8290" stroke-width="3" stroke-linecap="round"/><ellipse cx="132" cy="160" rx="10" ry="5" fill="#ee98a1" opacity=".5"/><ellipse cx="188" cy="160" rx="10" ry="5" fill="#ee98a1" opacity=".5"/></g>
+                <g id="hair-front"><path d="M104 120 Q93 69 132 52 Q180 31 216 66 Q234 85 220 122 Q207 100 191 91 Q169 112 130 106 Q119 112 104 132Z" fill="#694438"/><path d="M111 107 Q103 161 122 188 Q103 185 94 166 Q86 137 99 104Z" fill="#694438"/><path d="M212 101 Q232 135 214 178 Q232 167 237 144 Q241 116 224 91Z" fill="#694438"/></g>
+                <g id="hat" class="item-layer"></g><g id="hair-accessory" class="item-layer"></g><g id="accessory" class="item-layer"></g>
+              </g>
+            </svg>
+            <button class="rotate-button" id="pose-btn" title="Change pose">⟳</button>
+            <div class="avatar-name"><span class="name-spark">✦</span><span id="avatar-name">Mimi</span><button id="rename-btn" aria-label="Rename avatar">✎</button></div>
+          </div>
+          <div class="avatar-actions"><button class="secondary-btn" id="randomize-btn">⤨ <span>Surprise me</span></button><button class="primary-btn" id="save-look-btn">♡ <span>Save this look</span></button></div>
+        </div>
+
+        <div class="closet-panel">
+          <div class="closet-heading"><div><p class="eyebrow">THE GOOD STUFF</p><h2>Your closet <span class="item-count" id="item-count">12 pieces</span></h2></div><button class="text-btn" id="see-all-btn">See all <span>→</span></button></div>
+          <div class="category-tabs" role="tablist" aria-label="Clothing categories">
+            <button class="category-tab selected" data-category="all">All</button><button class="category-tab" data-category="top">Tops</button><button class="category-tab" data-category="bottom">Bottoms</button><button class="category-tab" data-category="dress">Dresses</button><button class="category-tab" data-category="hair">Hair</button><button class="category-tab" data-category="accessory">Extras</button>
+          </div>
+          <div class="closet-grid" id="closet-grid"></div>
+          <div class="tip-card"><span class="tip-icon">💡</span><p><b>A little style tip</b><br>Try a new color combo — your next favorite look might surprise you!</p><button id="tip-btn" aria-label="New tip">↻</button></div>
+        </div>
+      </section>
+
+      <section class="below-row">
+        <article class="challenge-card"><div class="challenge-copy"><span class="challenge-label">✦ TODAY'S STYLE PROMPT</span><h2>Cherry blossom<br><em>daydream</em></h2><p>Soft pinks, floaty layers, and a little springtime wonder.</p><button class="challenge-btn" id="challenge-btn">Style this prompt <span>→</span></button></div><div class="challenge-art"><div class="challenge-orb"></div><span class="flower f1">✿</span><span class="flower f2">✿</span><span class="flower f3">✧</span><div class="mini-dress">✿</div></div></article>
+        <article class="saved-card"><div class="saved-heading"><div><span class="challenge-label">YOUR LITTLE LOOKBOOK</span><h2>Saved looks <span id="saved-total">0</span></h2></div><button id="clear-saved" class="tiny-icon" title="Clear saved looks">•••</button></div><div id="saved-looks" class="saved-looks"><div class="empty-saved"><span>♡</span><p>Your next signature look<br>belongs here.</p></div></div></article>
+      </section>
+
+      <section class="page-view hidden" id="view-shop"><div class="page-heading"><p class="eyebrow">A LITTLE TREAT FOR YOU</p><h1>The <em>sparkle shop</em></h1><p>Pick up a mystery capsule or add a new favorite to your closet.</p></div><div class="shop-feature"><div class="capsule-visual"><span class="capsule-shine">✦</span><div class="capsule-ball">♡</div><span class="capsule-stars">✧　✦</span></div><div class="shop-copy"><span class="rarity-tag">LIMITED DROP · SPRING 01</span><h2>Petal Party Capsule</h2><p>One little capsule, one lovely new piece. Collect dreamy tops, sweet accessories, and more.</p><div class="rarity-row"><span>✿ Common</span><span>✧ Rare</span><span>★ Ultra rare</span></div><button class="primary-btn pull-btn" id="pull-btn">Open a capsule <span>· 300 ✦</span></button><small>Duplicates become 60 sparkle coins.</small></div></div><h2 class="shop-subtitle">Or shop the edit</h2><div class="shop-grid" id="shop-grid"></div></section>
+
+      <section class="page-view hidden" id="view-inspiration"><div class="page-heading"><p class="eyebrow">A COMMUNITY OF CREATORS</p><h1>Little looks, <em>big feelings.</em></h1><p>Get inspired by the colors and moods of the day.</p></div><div class="inspo-grid" id="inspo-grid"></div></section>
+
+      <section class="page-view hidden" id="view-closet"><div class="page-heading"><p class="eyebrow">EVERY GOOD THING YOU OWN</p><h1>Your <em>closet.</em></h1><p>Tap an item to try it on. Your style story starts here.</p></div><div class="closet-full-grid" id="closet-full-grid"></div></section>
+    </main>
+    <footer><span class="footer-mark">✿</span><span>Make today a little more <b>you.</b></span><span class="footer-right">A tiny world by Petal Pop <i>♡</i></span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop hidden" id="modal"><div class="modal-card"><button class="modal-close" id="modal-close" aria-label="Close">×</button><div id="modal-content"></div></div></div>
+  <script src="game.js"></script>
+</body>
+</html>
